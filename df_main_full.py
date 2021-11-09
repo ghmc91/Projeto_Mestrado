@@ -45,5 +45,5 @@ for df in array_df:
     df = pd.merge(df, df_ibge[['residence_antenna', 'classe']], on='residence_antenna')
 
 df_all = pd.concat(array_df)
-
-df_all.to_csv('/home/gustavo/Desktop/Mestrado/mestrado_dados/dados_18.11/df_main_full_jf.csv', index=None, sep=';')
+print(len(df_all))
+#df_all.to_csv('/home/gustavo/Desktop/Mestrado/mestrado_dados/dados_18.11/df_main_full_jf.csv', index=None, sep=';')
