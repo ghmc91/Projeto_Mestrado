@@ -14,4 +14,4 @@ dict_users = {"5B5F2C071D12AF13219DF5EBE05132AF": 3,
 for i in G.nodes:
     for j in dict_users.keys():
         if i == j:
-            G.nodes[i]['class'] = j
+            G.nodes[i]['class'] = dict_users.get(j)
